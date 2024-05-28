@@ -66,19 +66,19 @@ function App() {
     setOp3_nav(<Cont_3Testimonio/>)
   }
 
-  const imgFondo={
-    backgroundImage: `url(../img/fondo${op_img}.jpg)`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundAttachment: 'fixed',
-  }
+  // const imgFondo={
+  //   backgroundImage: `url(../img/fondo${op_img}.jpg)`,
+  //   backgroundRepeat: 'no-repeat',
+  //   backgroundSize: 'cover',
+  //   backgroundPosition: 'center',
+  //   backgroundAttachment: 'fixed',
+  // }
 
   return (
 
-<div>
+<div className='totalApp'>
 
-        <div className='app' style={imgFondo}>
+         <div className='app' /*style={imgFondo}*/> 
               <div className='content_principal'>
                   <div className='content_1'>  
                       <div className='content_left'>
@@ -95,7 +95,7 @@ function App() {
                   </div>
                   <div className='content_nav'>
                         <nav className='nav'>
-                          
+
                             <a onClick={HandleInicio}>Inicio</a>
                             <a onClick={HandleHabilidades} >Habilidades</a>
                             <a onClick={HandlePortafolio} >Portafolio</a>
@@ -103,6 +103,9 @@ function App() {
                             <a onClick={HandleTestimonio}>Testimonio</a>
                           
                         </nav>
+                        <div>
+                            <img className='logo' src="" alt="Logo" />
+                        </div>
                   </div>
                   
               </div>

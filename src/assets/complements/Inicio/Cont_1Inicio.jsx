@@ -4,8 +4,10 @@ const Cont_1Inicio = () => {
 
   return (
     
-    <div>
-        <h1>sdfdfsdfsdf</h1>
+    <div className='div_cont1Inicio'>
+              
+        <h1>Marco Cruz <br /> Desarrollador Full Stack</h1>
+        <img className='icon_img' src="..\icons\desarrollador-web.gif" alt="" />
 
     </div>
   )

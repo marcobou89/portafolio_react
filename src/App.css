@@ -1,57 +1,182 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root{
+  --h1-side:50px;
+  --h2-side:30px;
+  --color5:#E0E1DD;
+  --color4:#778DA9;
+  --color1:#0D1B2A;
+}
+
+h1{
+  font-size: var(--h1-side);
+  color: white;
+  background-color: var(--color1);
+}
+
+
+
+h2{
+  margin: 0 50px;
+  font-size: var(--h2-side);
+}
+.totalApp{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../public/img/fondo4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
 
 
 .app{
   display: flex;
   flex-wrap: wrap-reverse;
   border:2px solid black;
-  width: 100%;
-  height: 100vh;
+  border-radius: 15px;
+  width: 90%;
+  height: 90vh;
+  
+
 }
 .content_principal{
   display: flex;
   flex-direction: column;
   width: 100%;
-  border:2px solid red;
+  
+  
 }
 
 .content_1{
   display: flex;
   width: 100%;
   height: 80%;
-  border:2px dotted red;
 }
 
                 .content_left{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
                   width: 40%;
                   height:100%;
-                  border:2px dotted blue;
+                  
+                  
                 }
 
                 .content_right{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
                   width: 40%;
                   height: 100%;
-                  border:2px dotted green;
+                  
                   
                 }
                 .content_2{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
                   width: 20%;
                   height: 100%;
                 }
 
 .content_nav{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   height: 20%;
+  
 }
 
 .nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 150px;
+  border-radius: 15px;
+  background-color: var(--color5); 
+  color: black;
+  padding: 20px 40px; 
 }
 
+
+
+
+/* ===== complementos===== */
+/* INICIO */
+
+.div_cont1Inicio{
+  text-align: center;
+}
+.icon_img{
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+.div_cont3Inicio{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+
+  
+}
+.icon_redes{
+  width: 5rem;
+  height: 5rem;
+}
+.icon_redes:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+
+}
+
+
+
+
+/* TESTIMONIO */
+
+.testimonio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.div_tarjeta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 15px;
+  background-color: var(--color5); 
+  color: black;
+  padding: 20px 40px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 255.16), 0 3px 6px rgba(255,255,255,255.23);
+
+}
 
 
 
